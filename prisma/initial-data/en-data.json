@@ -1,0 +1,36 @@
+{
+    "levels": [
+        {
+            "order": 1,
+            "lang": "en",
+            "type": "learn",
+            "samuraiExpectedScore": null,
+            "name": "j&f",
+            "words": "jjj fff j f j f j f ffj jff jjj fff"
+        },
+        {
+            "order": 2,
+            "lang": "en",
+            "type": "practice",
+            "samuraiExpectedScore": null,
+            "name": "j&f",
+            "words": "jjj fff jjjj ffff jff fjj jfj jjf ffj jjff ffjj fjjj jfff fj jf fff jjj"
+        },
+        {
+            "order": 3,
+            "lang": "en",
+            "type": "samurai-game",
+            "samuraiExpectedScore": 2,
+            "name": "test",
+            "words": "this is just some test"
+        },
+        {
+            "order": 4,
+            "lang": "en",
+            "type": "story-time",
+            "samuraiExpectedScore": null,
+            "name": "Eldoria",
+            "words": "In the quiet town of Eldoria, shadows danced on cobblestone streets. Amelia, a curious girl with silver hair, discovered an ancient book in her attic. Its pages whispered forgotten tales. As she read, the room filled with ethereal light, revealing a portal to a realm of dreams. Brave and trembling, Amelia stepped through, embarking on a journey where words wove magic, and every keystroke shaped her destiny. Eldoria awaited the scribe who would inscribe new legends into the Book of Whispers."
+        }
+    ]
+}

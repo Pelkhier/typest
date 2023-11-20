@@ -1,0 +1,60 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  // output   = "./generated/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  name     String
+  email    String @unique
+  password String
+
+  textSize      String  @default("small")
+  keyboardSound Boolean @default(true)
+  keyboardShow  Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  completedLevels UserLevel[]
+}
+
+model Level {
+  id                   Int    @id @default(autoincrement())
+  order                Int
+  name                 String
+  lang                 String @default("en")
+  type                 String @default("practice")
+  samuraiExpectedScore Float?
+
+  words String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  UserLevel UserLevel[]
+}
+
+model UserLevel {
+  user      User    @relation(fields: [userId], references: [id])
+  userId    Int
+  level     Level   @relation(fields: [levelId], references: [id])
+  levelId   Int
+  completed Boolean @default(false)
+
+  accuracy  Float?
+  time      Float?
+  wpm       Float?
+  createdAt DateTime @default(now())
+  updated   DateTime @updatedAt
+
+  @@id([userId, levelId])
+}
