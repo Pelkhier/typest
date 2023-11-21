@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { dev } from "$app/environment";
     import language from "$lib/language";
     import { LogoSecondary, Spinner } from "$lib/components";
     import { navigating, page } from "$app/stores";
@@ -96,16 +97,18 @@
                                     {language[`${lang}`].nav.levels}
                                 </a>
                             </li>
-                            <li>
-                                <a
-                                    href={`/${lang}/add-level`}
-                                    data-active={$page.url.pathname.endsWith(
-                                        "add-level"
-                                    )}
-                                >
-                                    {language[`${lang}`].nav.addLevel}
-                                </a>
-                            </li>
+                            {#if dev}
+                                <li>
+                                    <a
+                                        href={`/${lang}/add-level`}
+                                        data-active={$page.url.pathname.endsWith(
+                                            "add-level"
+                                        )}
+                                    >
+                                        {language[`${lang}`].nav.addLevel}
+                                    </a>
+                                </li>
+                            {/if}
                         </ul>
                     {/if}
                 </div>
