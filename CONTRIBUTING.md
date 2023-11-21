@@ -26,7 +26,7 @@ Commit: [2] feat: adding missing sections
 
 You will need to [install Node.js](https://nodejs.org/) on your local machine.
 
-If you want to follow the main repo enviroments config you need to [install pnpm](https://pnpm.io/installation)
+If you want to follow the main repo enviroment config you need to [install pnpm](https://pnpm.io/installation)
 
 ## Installation
 
@@ -58,7 +58,7 @@ To get started with Typest locally, follow these steps
 
 7. Install node_modules packages
 
-    (Recommended)
+    - (Recommended)
 
     ```sh
     pnpm i
@@ -71,7 +71,8 @@ To get started with Typest locally, follow these steps
     ```
 
 8. Run Prisma migration to initiate the database connection and insert seed data for testing
-   (Recommended)
+
+    - (Recommended)
 
     ```sh
         pnpm dlx prisma migrate dev --name init
