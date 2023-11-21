@@ -8,6 +8,9 @@ import LogoSecondary from "./extra/logoSecondary.svelte";
 import LogoPrimary from "./extra/logoPrimary.svelte";
 import Separator from "./extra/separator.svelte";
 import HeroNotLogedin from "./home/heroNotLogedin.svelte";
+import TestSkills from "./home/testSkills.svelte";
+import Details from "./home/details.svelte";
+import Contributors from "./home/contributors.svelte";
 export {
     LogoPrimary,
     LogoSecondary,
@@ -19,4 +22,7 @@ export {
     Spinner,
     Separator,
     HeroNotLogedin,
+    TestSkills,
+    Details,
+    Contributors,
 };

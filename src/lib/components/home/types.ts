@@ -25,3 +25,19 @@ export type UserStats = {
         | null
         | undefined;
 } | null;
+
+export type GithubUser = ({
+    username: string;
+    description: string;
+    socials: {
+        facebook: string;
+        twitter: null;
+        instagram: null;
+        whatsapp: string;
+        github: string;
+    };
+    name: any;
+    login: any;
+    avatar_url: any;
+    html_url: any;
+} | null)[];
