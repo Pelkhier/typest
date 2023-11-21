@@ -64,7 +64,7 @@ To get started with Typest locally, follow these steps
     pnpm i
     ```
 
-    Or
+    - Or
 
     ```sh
     npm i
@@ -78,7 +78,7 @@ To get started with Typest locally, follow these steps
         pnpm dlx prisma migrate dev --name init
     ```
 
-    Or
+    - Or
 
     ```sh
         npx prisma migrate dev --name init
@@ -91,7 +91,7 @@ To get started with Typest locally, follow these steps
     ```sh
     pnpm run dev
     ```
-    Or
+    - Or
     ```sh
     npm run dev
     ```
