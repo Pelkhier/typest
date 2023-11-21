@@ -70,8 +70,23 @@ To get started with Typest locally, follow these steps
     npm i
     ```
 
-8. Start the dev server
+8. Run Prisma migration to initiate the database connection and insert seed data for testing
    (Recommended)
+
+    ```sh
+        pnpm dlx prisma migrate dev --name init
+    ```
+
+    Or
+
+    ```sh
+        npx prisma migrate dev --name init
+    ```
+
+    If you run into any problem, visit [Prisma Documentation](https://www.prisma.io/docs) or rise an [issue](https://github.com/Pelkhier/typest/issues).
+
+9. Start the dev server
+    - (Recommended)
     ```sh
     pnpm run dev
     ```
