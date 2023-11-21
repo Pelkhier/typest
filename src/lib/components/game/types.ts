@@ -16,6 +16,7 @@ export type GameData = {
 };
 
 export type GameType = "learn" | "practice" | "samurai-game" | "story-time";
+export type GameTypeAr = "تعلم" | "تمرين" | "لعبة الساموراي" | "قصة قصيرة";
 
 export type Game = "waiting for input" | "in progress" | "game over";
 

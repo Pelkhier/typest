@@ -1,11 +1,13 @@
 <script lang="ts">
-    import { goto } from "$app/navigation";
     import { page } from "$app/stores";
     import { langStore, loader } from "$lib/store/global";
+    import type { GameType, GameTypeAr } from "../game/types";
     import type { LevelCard } from "./types";
 
     export let userLevel: LevelCard;
     export let currentLevel = false;
+
+    let gameType: GameType | GameTypeAr = userLevel.level.type as GameType;
 
     let href = `${$page.url.pathname}/game?order=${userLevel.level.order}`;
     let dataSveltekitPreloadData:
@@ -30,6 +32,23 @@
             $loader = true;
         }
     }
+
+    if (userLevel.level.lang === "ar") {
+        switch (gameType) {
+            case "learn":
+                gameType = "تعلم";
+                break;
+            case "practice":
+                gameType = "تمرين";
+                break;
+            case "samurai-game":
+                gameType = "لعبة الساموراي";
+                break;
+            case "story-time":
+                gameType = "قصة قصيرة";
+                break;
+        }
+    }
 </script>
 
 <a
@@ -41,7 +60,7 @@
 >
     <div class="h-full flex flex-col justify-between items-start">
         <h4 class="text-md">
-            {userLevel.level.type.replace("-", " ").toUpperCase()}
+            {gameType.replace("-", " ").toUpperCase()}
         </h4>
         {#if userLevel.completed && userLevel.accuracy}
             <div class="flex flex-col items-start">
