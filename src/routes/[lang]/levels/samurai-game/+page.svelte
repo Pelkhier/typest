@@ -454,6 +454,7 @@
                 break;
             case "learn":
             case "practice":
+            case "story-time":
                 goto(
                     `/${$page.data.lang}/levels/game?order=${
                         data.game.level.order + 1
