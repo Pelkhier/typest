@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
     import { onMount } from "svelte";
 
     let divEl: HTMLDivElement;
@@ -28,4 +28,4 @@
         transform: translate(-200%);
         transition: all 1s ease;
     }
-</style>
+</style> -->
