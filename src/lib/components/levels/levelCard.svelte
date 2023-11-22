@@ -1,12 +1,13 @@
 <script lang="ts">
     import { page } from "$app/stores";
-    import { langStore, loader } from "$lib/store/global";
+    import { loader } from "$lib/store/global";
     import type { GameType, GameTypeAr } from "../game/types";
+    import type { Lang } from "../keyboard/types";
     import type { LevelCard } from "./types";
 
     export let userLevel: LevelCard;
     export let currentLevel = false;
-
+    export let lang: Lang;
     let gameType: GameType | GameTypeAr = userLevel.level.type as GameType;
 
     let href = `${$page.url.pathname}/game?order=${userLevel.level.order}`;
@@ -77,7 +78,7 @@
     <div
         class:completed={userLevel.completed || currentLevel}
         class="finger rounded-full bg-rose-600 flex flex-col justify-center"
-        data-dir={$langStore}
+        data-dir={lang}
     >
         {#if userLevel.level.type === "samurai-game"}
             <div
@@ -86,7 +87,7 @@
                 <iconify-icon icon="game-icons:samurai-helmet" />
             </div>
         {:else}
-            <div class="nail" data-dir={$langStore} />
+            <div class="nail" data-dir={lang} />
             <div class="h-full flex items-center justify-center">
                 <h2 class="text-2xl text-white w-full text-center">
                     {userLevel.level.name}
