@@ -426,7 +426,9 @@
                 bind:this={inputEl}
                 on:keydown={handleKeydown}
             />
-            <div class="w-full flex justify-center">
+            <div
+                class="shadow-[0px_-2px_4px_#cccccc_inset] dark:shadow-[0px_-4px_4px_#0c0d11_inset] w-full flex justify-center"
+            >
                 <div class="h-44 w-4/5 overflow-y-hidden">
                     <div
                         bind:this={wordsEl}
@@ -455,7 +457,7 @@
                 </div>
             </div>
             {#if !showResult && settings.keyboardShow}
-                <div class="w-full fixed bottom-36">
+                <div class="w-full mt-4">
                     <Keyboard {firstHandsLoad} />
                 </div>
             {/if}
@@ -632,6 +634,7 @@
 
     .result {
         height: 60vh;
+        min-height: 500px;
         margin-top: 3rem;
         border-radius: 2rem;
         opacity: 1;
