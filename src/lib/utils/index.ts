@@ -404,3 +404,29 @@ export const clickOutside: OutsideEvent = (node: HTMLElement) => {
         },
     };
 };
+
+export function animateElementChildWhenShow(el: HTMLElement) {
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                console.log(entry);
+
+                let child = el.firstChild as HTMLDivElement;
+                if (entry.isIntersecting) {
+                    child.style.transform = "translatey(0px)";
+                } else {
+                    if (entry.boundingClientRect.y > 0) {
+                        child.style.transform = "translatey(100px)";
+                    } else {
+                        child.style.transform = "translatey(-100px)";
+                    }
+                }
+            });
+        },
+        {
+            rootMargin: "-60px 0px",
+        }
+    );
+
+    observer.observe(el);
+}
