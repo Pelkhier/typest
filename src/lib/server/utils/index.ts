@@ -25,7 +25,7 @@ export async function loginUser({ email, password }: UserLoginInfo) {
             return null;
         }
     } else {
-        throw new Error("user does not exit");
+        return null;
     }
     return { id: user?.id, name: user?.name, email: user?.email };
 }

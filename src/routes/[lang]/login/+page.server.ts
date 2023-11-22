@@ -81,14 +81,14 @@ export const actions: Actions = {
             return fail(403, response);
         }
 
-        try {
-            const user = await loginUser({ email, password });
-            if (!user) {
-                response.error = true;
-                response.message = "Invalid username or password.";
-                return fail(404, response);
-            }
+        const user = await loginUser({ email, password });
+        if (!user) {
+            response.error = true;
+            response.message = "Invalid username or password.";
+            return fail(404, response);
+        }
 
+        try {
             const userJson = JSON.stringify(user);
             // TODO: change expiration time
             let authToken = await signJWT(
