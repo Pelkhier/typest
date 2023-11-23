@@ -52,7 +52,7 @@
                         class="h-6 w-6 bg-gostwhite dark:bg-darkblue rounded-tr-2xl"
                     />
                 </div>
-                <div class="details-separator w-1 h-[105%]" />
+                <div class="details-separator w-1 h-[110%]" />
                 <div class="h-6 w-6 bg-tomato">
                     <div
                         class="h-6 w-6 bg-gostwhite dark:bg-darkblue rounded-tl-2xl"
