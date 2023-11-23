@@ -1,34 +1,48 @@
 <script lang="ts">
     import language from "$lib/language";
+    import { onMount } from "svelte";
     import type { Lang } from "../keyboard/types";
     import type { GithubUser } from "./types";
+    import { animateElementChildWhenShow } from "$lib/utils";
 
     export let githubUsers: GithubUser;
     export let lang: Lang;
+
+    let listDiv: HTMLDivElement;
+    let footerDiv: HTMLDivElement;
+    onMount(() => {
+        animateElementChildWhenShow([listDiv, footerDiv]);
+    });
 </script>
 
 <div class="contributors w-full h-[40rem] mt-6 flex flex-col items-center">
-    <div class="my-8 flex w-full items-center">
-        <div class="bg-darkblue dark:bg-gostwhite h-1 w-full" />
-        <div
-            class="flex gap-4 items-center rounded-full bg-darkblue dark:bg-gostwhite px-6 py-1"
-        >
-            <h2 class="text-2xl font-bold text-gostwhite dark:text-darkblue">
-                {language[`${lang}`].contributors}
-            </h2>
-            <iconify-icon
-                class="text-5xl text-gostwhite dark:text-darkblue"
-                icon="mdi:github"
-            />
+    <div class="my-8 w-full">
+        <div class="flex w-full items-center">
+            <div class="bg-darkblue dark:bg-gostwhite h-1 w-full" />
+
+            <div
+                class="flex gap-4 items-center rounded-full bg-darkblue dark:bg-gostwhite px-6 py-1"
+            >
+                <h2
+                    class="text-2xl font-bold text-gostwhite dark:text-darkblue"
+                >
+                    {language[`${lang}`].contributors}
+                </h2>
+                <iconify-icon
+                    class="text-5xl text-gostwhite dark:text-darkblue"
+                    icon="mdi:github"
+                />
+            </div>
+            <div class="bg-darkblue dark:bg-gostwhite h-1 w-full" />
         </div>
-        <div class="bg-darkblue dark:bg-gostwhite h-1 w-full" />
     </div>
 
     <div
+        bind:this={listDiv}
         class="h-full w-1/2 mb-6 px-4 py-6 rounded-xl bg-darkblue bg-opacity-10 dark:bg-gostwhite dark:bg-opacity-20 shadow-md shadow-darkblue"
     >
         <ul
-            class="list h-[24rem] w-full px-6 py-3 flex flex-col gap-4 rounded-md text-gostwhite overflow-y-auto overflow-x-clip"
+            class="list h-[24rem] w-full px-6 py-3 flex flex-col gap-4 rounded-md text-gostwhite overflow-y-auto overflow-x-clip observer-child-default"
         >
             {#each githubUsers as githubUser}
                 <li
@@ -111,7 +125,11 @@
             {/each}
         </ul>
     </div>
-    <div class="bg-darkblue dark:bg-gostwhite h-1 w-full mt-6" />
+    <div bind:this={footerDiv} class="w-full mt-6">
+        <div
+            class="bg-darkblue dark:bg-gostwhite h-1 w-full observer-child-default"
+        />
+    </div>
 </div>
 
 <style lang="postcss">
@@ -129,5 +147,9 @@
             rgb(19, 30, 37) 50.5%,
             rgb(19, 30, 37) 66%
         );
+    }
+    .contributors .observer-child-default {
+        transform: translatey(100px);
+        transition: transform 1s ease;
     }
 </style>

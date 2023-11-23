@@ -1,13 +1,11 @@
 <script lang="ts">
     import { fade } from "svelte/transition";
-    import language from "$lib/language";
     import type { PageServerData } from "./$types";
     import type { Lang } from "$lib/components/keyboard/types";
     import { page } from "$app/stores";
     import HeroNotLogedin from "$lib/components/home/heroNotLogedin.svelte";
     import type { UserClient } from "$lib/components/home/types";
     import HeroLogedin from "$lib/components/home/heroLogedin.svelte";
-    import { enhance } from "$app/forms";
     import { Contributors, Details, TestSkills } from "$lib/components";
 
     export let data: PageServerData;
@@ -84,6 +82,8 @@
     <!-- Start Contribute Section -->
     <Contributors githubUsers={data.githubUsers} {lang} />
     <!-- End Contribute Section -->
+
+    <div class="w-full h-[700px]" />
 </div>
 
 <style lang="postcss">

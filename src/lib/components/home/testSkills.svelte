@@ -10,7 +10,7 @@
     let divEl: HTMLDivElement;
 
     onMount(() => {
-        animateElementChildWhenShow(divEl);
+        animateElementChildWhenShow([divEl]);
     });
 </script>
 

@@ -405,28 +405,29 @@ export const clickOutside: OutsideEvent = (node: HTMLElement) => {
     };
 };
 
-export function animateElementChildWhenShow(el: HTMLElement) {
-    const observer = new IntersectionObserver(
-        (entries) => {
+export function animateElementChildWhenShow(
+    elements: HTMLElement[],
+    viewTranslateCss = {
+        default: "translatey(0px)",
+        above: "translatey(-100px)",
+        lower: "translatey(100px)",
+    }
+) {
+    elements.forEach((el) => {
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
-                console.log(entry);
-
                 let child = el.firstChild as HTMLDivElement;
+                let parentBounding = el.getBoundingClientRect();
                 if (entry.isIntersecting) {
-                    child.style.transform = "translatey(0px)";
+                    child.style.transform = viewTranslateCss.default;
+                } else if (parentBounding.y <= 0) {
+                    child.style.transform = viewTranslateCss.above;
                 } else {
-                    if (entry.boundingClientRect.y > 0) {
-                        child.style.transform = "translatey(100px)";
-                    } else {
-                        child.style.transform = "translatey(-100px)";
-                    }
+                    child.style.transform = viewTranslateCss.lower;
                 }
             });
-        },
-        {
-            rootMargin: "-60px 0px",
-        }
-    );
+        });
 
-    observer.observe(el);
+        observer.observe(el);
+    });
 }
