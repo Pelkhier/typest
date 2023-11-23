@@ -105,11 +105,27 @@
         cursor: default;
         user-select: none;
         transition: all 0.5s ease;
-        @apply border-darkblue dark:border-gostwhite shadow-xl;
+        @apply bg-gostwhite bg-opacity-80 dark:bg-darkblue dark:bg-opacity-80 border-darkblue dark:border-gostwhite shadow-xl;
     }
     .level.completed {
         opacity: 1;
         cursor: pointer;
+    }
+    .level::before {
+        content: "";
+        opacity: 0.4;
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        translate: -0.8rem -0.8rem;
+        border-radius: inherit;
+        @apply bg-tomato;
+    }
+    .level.completed::before {
+        opacity: 1;
+    }
+    :global(.layout[data-dir="ar"] .level::before) {
+        translate: 0.8rem -0.8rem;
     }
     :global(.finger) {
         position: absolute;
@@ -124,8 +140,6 @@
         left: 4px;
     }
     .level.completed:hover {
-        /* background-color: ghostwhite;
-        color: black; */
         @apply text-gostwhite bg-darkblue dark:bg-gostwhite dark:text-darkblue;
     }
     .level:hover :global(.finger.completed) {
