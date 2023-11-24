@@ -11,21 +11,6 @@
     import { ToggleDarkMode } from "$lib/components";
     import LogoPrimary from "$lib/components/extra/logoPrimary.svelte";
 
-    // ------------------------------------
-    // TODO: consider doing device detection in the server because device-detector-js is too hevy for client
-    import DeviceDetector from "device-detector-js";
-    import { goto } from "$app/navigation";
-    import { onMount } from "svelte";
-    onMount(() => {
-        const deviceDetector = new DeviceDetector();
-        const userAgent = navigator.userAgent;
-        const device = deviceDetector.parse(userAgent);
-        if (device.device?.type !== "desktop") {
-            goto("/not-supported");
-        }
-    });
-    // --------------------------------------
-
     export let data: LayoutData;
 
     let lang: Lang = data.lang;
