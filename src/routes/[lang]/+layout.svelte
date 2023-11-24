@@ -93,6 +93,16 @@
                                         {language[`${lang}`].nav.addLevel}
                                     </a>
                                 </li>
+                                <li>
+                                    <a
+                                        href={`/${lang}/duck-hunt`}
+                                        data-active={$page.url.pathname.endsWith(
+                                            "duck-hunt"
+                                        )}
+                                    >
+                                        Duck Hunt
+                                    </a>
+                                </li>
                             {/if}
                         </ul>
                     {/if}
