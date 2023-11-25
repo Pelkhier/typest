@@ -1,7 +1,11 @@
 .DS_Store
 node_modules
 /build
-prisma/migrations
+prisma/*
+!prisma/schema.prisam
+!prisma/schema.prisam
+!prisma/seed.js
+!prisma/initial-data
 /.svelte-kit
 /package
 .env
