@@ -27,7 +27,7 @@ export const load: PageServerLoad = async ({ locals }) => {
                     lang: true,
                     order: true,
                     type: true,
-                    samuraiExpectedScore: true,
+                    expectedMiniGameScore: true,
                 },
             },
         },

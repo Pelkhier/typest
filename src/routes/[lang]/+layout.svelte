@@ -99,6 +99,7 @@
                                         data-active={$page.url.pathname.endsWith(
                                             "duck-hunt"
                                         )}
+                                        data-sveltekit-preload-data="off"
                                     >
                                         Duck Hunt
                                     </a>

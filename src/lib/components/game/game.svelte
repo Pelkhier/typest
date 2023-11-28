@@ -359,6 +359,9 @@
                     }`
                 );
                 break;
+            case "duck-hunt":
+                goto(`/${lang}/levels/duck-hunt?order=${data.level.order + 1}`);
+                break;
             case "learn":
             case "practice":
             case "story-time":

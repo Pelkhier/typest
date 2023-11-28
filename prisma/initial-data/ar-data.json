@@ -4,7 +4,7 @@
             "order": 1,
             "lang": "ar",
             "type": "learn",
-            "samuraiExpectedScore": null,
+            "expectedMiniGameScore": null,
             "name": "ب|ت",
             "words": "ب ت بب تت بببب تتتت ببتت تتبب بتبت تب بت ببت تتب تتتت بببب"
         },
@@ -12,7 +12,7 @@
             "order": 2,
             "lang": "ar",
             "type": "practice",
-            "samuraiExpectedScore": null,
+            "expectedMiniGameScore": null,
             "name": "ب|ت",
             "words": "بببب تتتت تت بب ببت تتب ببببت تتتب ببتت تتبب بببب تتتت تتبب ببت تبت بتب ب ت ب ت تت بب بببب تتتت"
         },
@@ -20,7 +20,7 @@
             "order": 3,
             "lang": "ar",
             "type": "samurai-game",
-            "samuraiExpectedScore": 2,
+            "expectedMiniGameScore": 2,
             "name": "ب|ت",
             "words": "بببب تتتت تتب ببت ببتت تتبب بتبت تبتب تت بب بتب تبت تتبت ببتب بببب تتتت"
         },
@@ -28,9 +28,17 @@
             "order": 4,
             "lang": "ar",
             "type": "story-time",
-            "samuraiExpectedScore": null,
+            "expectedMiniGameScore": null,
             "name": "إيلدوريا",
             "words": "في بلدة إيلدوريا الهادئة، رقصت الظلال على شوارعها المرصوفة بالحصى. اكتشفت أميليا، فتاة فضولية ذات شعر فضي، كتابًا قديمًا في علية منزلها. تهمس صفحاته بحكايات نسيت. وبينما كانت تقرأ، امتلأت الغرفة بالضوء السرمدي، كاشفًا بوابة إلى عالم الأحلام. خطوة بجرأة ورهبة، توجهت أميليا خلالها، مبتدعة رحلة حيث كلمات السحر تلفظها، وكل ضغطة على الأزرار تشكل مصيرها. إيلدوريا كانت تنتظر الكاتب الذي سيسجل أساطير جديدة في كتاب الهمس."
+        },
+        {
+            "order": 5,
+            "lang": "ar",
+            "type": "duck-hunt",
+            "expectedMiniGameScore": 2,
+            "name": "ب|ت",
+            "words": "هذا مجرد إختبار"
         }
     ]
 }

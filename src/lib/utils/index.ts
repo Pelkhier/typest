@@ -431,3 +431,11 @@ export function animateElementChildWhenShow(
         observer.observe(el);
     });
 }
+
+export function removeMainLayoutNavbar() {
+    document.body.style.overflow = "hidden";
+    let mainLayout = document.getElementById("main-layout") as HTMLDivElement;
+    mainLayout.style.padding = "0";
+    let nav = mainLayout.firstElementChild as HTMLDivElement;
+    nav.style.display = "none";
+}

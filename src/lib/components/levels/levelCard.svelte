@@ -23,6 +23,9 @@
     if (userLevel.level.type === "samurai-game") {
         href = `${$page.url.pathname}/samurai-game?order=${userLevel.level.order}`;
         dataSveltekitPreloadData = "off";
+    } else if (userLevel.level.type === "duck-hunt") {
+        href = `${$page.url.pathname}/duck-hunt?order=${userLevel.level.order}`;
+        dataSveltekitPreloadData = "off";
     }
     function handleClick(event: Event) {
         if (!(userLevel.completed || currentLevel)) {
@@ -85,6 +88,12 @@
                 class="w-full h-full flex justify-center items-center text-7xl text-gostwhite"
             >
                 <iconify-icon icon="game-icons:samurai-helmet" />
+            </div>
+        {:else if userLevel.level.type === "duck-hunt"}
+            <div
+                class="w-full h-full flex justify-center items-center text-6xl text-gostwhite"
+            >
+                <iconify-icon icon="icon-park-solid:duck"></iconify-icon>
             </div>
         {:else}
             <div class="nail" data-dir={lang} />

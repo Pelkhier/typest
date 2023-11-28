@@ -10,7 +10,7 @@ export const actions: Actions = {
         const order = Number(data.get("order"));
         const lang = String(data.get("lang"));
         const type = String(data.get("type"));
-        const samuraiExpectedScore = data.get("expected-score")
+        const expectedMiniGameScore = data.get("expected-score")
             ? Number(data.get("expected-score"))
             : null;
 
@@ -22,7 +22,7 @@ export const actions: Actions = {
                 lang,
                 type,
                 words,
-                samuraiExpectedScore,
+                expectedMiniGameScore,
             },
         });
         const userLevel = await db.userLevel.create({

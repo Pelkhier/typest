@@ -24,7 +24,7 @@
     let text = data.game.level.words.split(" ");
     let totalLettersCorrect = text.join("").length;
     let textLength = text.join("").length;
-    let expectedLowTimeForWord = 2;
+    let expectedLowTimeForWord = data.game.level.expectedMiniGameScore;
     let scoreForWordPerSecond: Score = null;
 
     let wordIndex = 0;
@@ -448,6 +448,13 @@
             case "samurai-game":
                 goto(
                     `/${$page.data.lang}/levels/samurai-game?order=${
+                        data.game.level.order + 1
+                    }`
+                );
+                break;
+            case "duck-hunt":
+                goto(
+                    `/${lang}/levels/duck-hunt?order=${
                         data.game.level.order + 1
                     }`
                 );
