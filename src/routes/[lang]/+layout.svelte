@@ -93,17 +93,6 @@
                                         {language[`${lang}`].nav.addLevel}
                                     </a>
                                 </li>
-                                <li>
-                                    <a
-                                        href={`/${lang}/duck-hunt`}
-                                        data-active={$page.url.pathname.endsWith(
-                                            "duck-hunt"
-                                        )}
-                                        data-sveltekit-preload-data="off"
-                                    >
-                                        Duck Hunt
-                                    </a>
-                                </li>
                             {/if}
                         </ul>
                     {/if}

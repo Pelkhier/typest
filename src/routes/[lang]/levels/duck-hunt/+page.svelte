@@ -41,9 +41,12 @@
     let animationId: number;
     let deadDucks = 0;
 
-    let shotSound = new Audio("/duck-hunt-assets/sounds/gunSound.mp3");
-    let laughSound = new Audio("/duck-hunt-assets/sounds/laugh.mp3");
-    let findDuckSound = new Audio("/duck-hunt-assets/sounds/findDuck.mp3");
+    const ducksSoundBackground = new Audio(
+        "/duck-hunt-assets/sounds/quacking.mp3"
+    );
+    const shotSound = new Audio("/duck-hunt-assets/sounds/gunSound.mp3");
+    const laughSound = new Audio("/duck-hunt-assets/sounds/laugh.mp3");
+    const findDuckSound = new Audio("/duck-hunt-assets/sounds/findDuck.mp3");
 
     let backgroundGrass = new Background({
         position: {
@@ -141,6 +144,10 @@
         context.fillStyle = "#87CEEB";
         context.fillRect(0, 0, canvas.width, canvas.height);
 
+        // ====================== Background sounds =================================
+        ducksSoundBackground.loop = true;
+        ducksSoundBackground.autoplay = true;
+        ducksSoundBackground.play();
         // ====================== Grass background Y position ========================
         backgroundGrass.position.y =
             canvas.height - backgroundGrass.imageHeight;
@@ -212,6 +219,7 @@
     function gameOver() {
         gameState = "game over";
         wordIndex = 0;
+        ducksSoundBackground.pause();
         cancelAnimationFrame(animationId);
         setGameResult();
     }
@@ -320,6 +328,11 @@
         laughSound.pause();
         shotSound.pause();
         findDuckSound.pause();
+        if (settings.mute) {
+            ducksSoundBackground.pause();
+        } else {
+            ducksSoundBackground.play();
+        }
     }
     function isMute() {
         return settings.mute;

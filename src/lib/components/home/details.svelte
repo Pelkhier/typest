@@ -2,6 +2,8 @@
     import { animateElementChildWhenShow } from "$lib/utils";
     import { onMount } from "svelte";
 
+    const arabicParagraph = "";
+
     const numberOfDivs = 4;
     let leftDivs: HTMLDivElement[] | number[] = Array(numberOfDivs);
     let rightDivs: HTMLDivElement[] | number[] = Array(numberOfDivs);

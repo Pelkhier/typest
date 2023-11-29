@@ -4,7 +4,7 @@
     import WordGame from "./wordGame.svelte";
     import type { PageServerData } from "./$types";
     import type { Lang } from "$lib/components/keyboard/types";
-    import { page } from "$app/stores";
+    import { navigating, page } from "$app/stores";
     import { tweened } from "svelte/motion";
     import language from "$lib/language";
     import { goto } from "$app/navigation";
@@ -24,7 +24,7 @@
     let text = data.game.level.words.split(" ");
     let totalLettersCorrect = text.join("").length;
     let textLength = text.join("").length;
-    let expectedLowTimeForWord = data.game.level.expectedMiniGameScore;
+    let expectedLowTimeForWord = data.game.level.expectedMiniGameScore ?? 2;
     let scoreForWordPerSecond: Score = null;
 
     let wordIndex = 0;

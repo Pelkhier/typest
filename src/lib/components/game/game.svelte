@@ -236,6 +236,7 @@
         event.preventDefault();
         typedLetter = event.key;
         if (settings.keyboardSound) {
+            audio.currentTime = 0;
             audio.play();
         }
 
