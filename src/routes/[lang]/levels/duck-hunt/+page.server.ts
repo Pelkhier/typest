@@ -1,5 +1,5 @@
 import db from "$lib/server/database";
-import { redirect } from "@sveltejs/kit";
+import { redirect, type Actions } from "@sveltejs/kit";
 import type { PageServerLoad } from "./$types";
 import type { Lang } from "$lib/components/keyboard/types";
 import { loader } from "$lib/store/global";
@@ -35,6 +35,11 @@ export const load: PageServerLoad = async ({ url, params, locals }) => {
                     expectedMiniGameScore: true,
                 },
             },
+            user: {
+                select: {
+                    miniGameSound: true,
+                },
+            },
             completed: true,
             accuracy: true,
             time: true,
@@ -46,6 +51,7 @@ export const load: PageServerLoad = async ({ url, params, locals }) => {
     }
     const nextGame = await db.userLevel.findFirst({
         where: {
+            userId: locals.user?.id,
             level: {
                 order: order + 1,
                 lang,
@@ -60,9 +66,23 @@ export const load: PageServerLoad = async ({ url, params, locals }) => {
         },
     });
 
-    let nextLevelType: GameType | undefined = nextGame?.level.type as
+    const nextLevelType: GameType | undefined = nextGame?.level.type as
         | GameType
         | undefined;
 
     return { game: level, nextLevelType };
+};
+
+export const actions: Actions = {
+    toggleSounds: async ({ request, locals }) => {
+        const data = await request.json();
+        await db.user.update({
+            where: {
+                id: locals.user?.id,
+            },
+            data: {
+                miniGameSound: !data.mute,
+            },
+        });
+    },
 };

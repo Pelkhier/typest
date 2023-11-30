@@ -27,6 +27,7 @@ model User {
   textSize      String  @default("small")
   keyboardSound Boolean @default(true)
   keyboardShow  Boolean @default(true)
+  miniGameSound Boolean @default(true)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

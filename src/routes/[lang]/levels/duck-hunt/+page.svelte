@@ -23,10 +23,10 @@
     let lang: Lang = $page.data.lang;
     let gameState: GameState = "in progress";
     let settings = {
-        mute: false,
+        mute: !data.game.user.miniGameSound,
     };
 
-    let text = "This is just some test".split(" ");
+    let text = data.game.level.words.split(" ");
     let totalLettersCorrect = text.join("").length;
     let textLength = totalLettersCorrect;
     const duckHuntExpectedScore = data.game.level.expectedMiniGameScore ?? 2;
@@ -146,8 +146,10 @@
 
         // ====================== Background sounds =================================
         ducksSoundBackground.loop = true;
-        ducksSoundBackground.autoplay = true;
-        ducksSoundBackground.play();
+        if (!settings.mute) {
+            ducksSoundBackground.autoplay = true;
+            ducksSoundBackground.play();
+        }
         // ====================== Grass background Y position ========================
         backgroundGrass.position.y =
             canvas.height - backgroundGrass.imageHeight;
@@ -319,13 +321,13 @@
             time: fullTime,
             accuracy: acc,
         });
-        const result = await fetch("/api/game", {
+        await fetch("/api/game", {
             method: "POST",
             body,
         });
     }
 
-    function toggleSounds() {
+    async function toggleSounds() {
         settings.mute = !settings.mute;
         laughSound.pause();
         shotSound.pause();
@@ -335,6 +337,12 @@
         } else {
             ducksSoundBackground.play();
         }
+
+        const body = JSON.stringify(settings);
+        await fetch("?/toggleSounds", {
+            method: "POST",
+            body,
+        });
     }
     function isMute() {
         return settings.mute;
@@ -343,7 +351,7 @@
 
 <div class="inline-block relative">
     <!-- Start Ducks score top left -->
-    <ul class="absolute z-20 top-10 left-10 flex gap-6">
+    <ul class="absolute z-20 top-4 left-10 flex gap-6">
         {#each { length: text.length } as _, idx}
             <li
                 class="text-2xl test-gostwhite"

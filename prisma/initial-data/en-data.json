@@ -21,11 +21,115 @@
             "lang": "en",
             "type": "samurai-game",
             "expectedMiniGameScore": 2,
-            "name": "test",
-            "words": "this is just some test"
+            "name": "j&f",
+            "words": "jjjj ffff jj ff fjf jfj ffjj jjff fffj jfff fjfj ffff jjjj"
         },
         {
             "order": 4,
+            "lang": "en",
+            "type": "duck-hunt",
+            "expectedMiniGameScore": 5,
+            "name": "j&f",
+            "words": "jjjj ffff jj ff fjf jfj ffjj jjff fffj jfff fjfj ffff jjjj"
+        },
+        {
+            "order": 5,
+            "lang": "en",
+            "type": "learn",
+            "expectedMiniGameScore": null,
+            "name": "k&d",
+            "words": "kkk ddd k d k d k d ddk ddk kkk ddd"
+        },
+        {
+            "order": 6,
+            "lang": "en",
+            "type": "practice",
+            "expectedMiniGameScore": null,
+            "name": "k&d",
+            "words": "kkk ddd kkkk dddd kkkd dddk kdk dkd ddk kkd ddkk kkdd kdkd dkdk dd kk ddd kkk dddd kkkk"
+        },
+        {
+            "order": 7,
+            "lang": "en",
+            "type": "samurai-game",
+            "expectedMiniGameScore": 2,
+            "name": "k&d",
+            "words": "kkkk dddd kk dd kdk dkd kkdd ddkk dddk kddd kdkd kkkk dddd"
+        },
+        {
+            "order": 8,
+            "lang": "en",
+            "type": "duck-hunt",
+            "expectedMiniGameScore": 5,
+            "name": "k&d",
+            "words": "kkkk dddd kk dd kdk dkd kkdd ddkk dddk kddd kdkd kkkk dddd"
+        },
+        {
+            "order": 9,
+            "lang": "en",
+            "type": "learn",
+            "expectedMiniGameScore": null,
+            "name": "l&s",
+            "words": "lll sss l s l s l s lls ssl lll sss"
+        },
+        {
+            "order": 10,
+            "lang": "en",
+            "type": "practice",
+            "expectedMiniGameScore": null,
+            "name": "l&s",
+            "words": "lll sss llll ssss llls sssl lsl sls lls ssl ssll llss lsls slsl ss ll sss lll ssss llll"
+        },
+        {
+            "order": 11,
+            "lang": "en",
+            "type": "samurai-game",
+            "expectedMiniGameScore": 2,
+            "name": "l&s",
+            "words": "llll ssss ll ss lsl sls llss ssll llls slll lsls llll ssss"
+        },
+        {
+            "order": 12,
+            "lang": "en",
+            "type": "duck-hunt",
+            "expectedMiniGameScore": 5,
+            "name": "l&s",
+            "words": "llll ssss ll ss lsl sls llss ssll llls slll lsls llll ssss"
+        },
+        {
+            "order": 13,
+            "lang": "en",
+            "type": "learn",
+            "expectedMiniGameScore": null,
+            "name": ";&a",
+            "words": ";;; aaa ; a ; a ; a ;;a a; ;;; aaa"
+        },
+        {
+            "order": 14,
+            "lang": "en",
+            "type": "practice",
+            "expectedMiniGameScore": null,
+            "name": ";&a",
+            "words": ";;; aaa ;;;; aaaa ;;;a a;;; ;a; a;a ;;a aa; ;;aa aa;; ;a;a a;a; aa ;; aaa ;;; aaaa ;;;;"
+        },
+        {
+            "order": 15,
+            "lang": "en",
+            "type": "samurai-game",
+            "expectedMiniGameScore": 2,
+            "name": ";&a",
+            "words": ";;;; aaaa ;; aa ;a; a;a ;;aa aa;; ;;;a ;aaa ;a;a aaaa ;;;;"
+        },
+        {
+            "order": 16,
+            "lang": "en",
+            "type": "duck-hunt",
+            "expectedMiniGameScore": 5,
+            "name": ";&a",
+            "words": ";;;; aaaa ;; aa ;a; a;a ;;aa aa;; ;;;a ;aaa ;a;a aaaa ;;;;"
+        },
+        {
+            "order": 17,
             "lang": "en",
             "type": "story-time",
             "expectedMiniGameScore": null,
@@ -33,12 +137,12 @@
             "words": "In the quiet town of Eldoria, shadows danced on cobblestone streets. Amelia, a curious girl with silver hair, discovered an ancient book in her attic. Its pages whispered forgotten tales. As she read, the room filled with ethereal light, revealing a portal to a realm of dreams. Brave and trembling, Amelia stepped through, embarking on a journey where words wove magic, and every keystroke shaped her destiny. Eldoria awaited the scribe who would inscribe new legends into the Book of Whispers."
         },
         {
-            "order": 5,
+            "order": 18,
             "lang": "en",
-            "type": "duck-hunt",
-            "expectedMiniGameScore": 2,
-            "name": "test",
-            "words": "this is just some test"
+            "type": "story-time",
+            "expectedMiniGameScore": null,
+            "name": "Finley",
+            "words": "In the heart of Everwood Forest, a mischievous fox named Finley darted between ancient trees. One day, he stumbled upon a hidden glade adorned with glowing mushrooms. Intrigued, Finley touched a mushroom, and to his surprise, it whispered forgotten secrets. The forest echoed with enchantment as Finley, now imbued with mystical knowledge, embarked on a quest. His nimble paws danced across the mossy ground, leaving a trail of luminous prints. Legends say those who follow Finley's path unlock the magic within the trees, revealing the ethereal harmony of Everwood."
         }
     ]
 }
