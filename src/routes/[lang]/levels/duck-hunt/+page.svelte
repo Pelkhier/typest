@@ -233,6 +233,7 @@
 
     function handleNextLevel() {
         document.body.style.overflow = "auto";
+        document.body.style.overflowX = "hidden";
         let mainLayout = document.getElementById(
             "main-layout"
         ) as HTMLDivElement;
@@ -272,6 +273,7 @@
     function handleHomeClick() {
         // TODO : this needed to bed handled more robust way, I am forcing the change here because in this page the layout is disabled, and when returning back the layout will stay disabled, so this need fixing
         document.body.style.overflow = "auto";
+        document.body.style.overflowX = "hidden";
         let mainLayout = document.getElementById(
             "main-layout"
         ) as HTMLDivElement;
