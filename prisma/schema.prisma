@@ -24,7 +24,7 @@ model User {
   email    String @unique
   password String
 
-  textSize      String  @default("small")
+  textSize      String  @default("medium")
   keyboardSound Boolean @default(true)
   keyboardShow  Boolean @default(true)
   miniGameSound Boolean @default(true)
