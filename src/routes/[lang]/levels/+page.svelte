@@ -12,8 +12,8 @@
     );
 </script>
 
-<div class="container mt-16" in:fade={{ delay: 300, duration: 300 }}>
-    <div id="levels" class="w-full grid grid-cols-6 gap-10 gap-y-16">
+<div class="container my-16" in:fade={{ delay: 300, duration: 300 }}>
+    <div id="levels" class="w-full grid grid-cols-6 gap-10 gap-y-20">
         {#each data.userLevels as userLevel, index}
             <LevelCard
                 {userLevel}

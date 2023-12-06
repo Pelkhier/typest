@@ -13,7 +13,16 @@
     import { goto } from "$app/navigation";
 
     type GameState = "in progress" | "game over";
-    type Score = "perfect" | "good" | "ok" | "bad" | null;
+    type Score =
+        | "perfect"
+        | "good"
+        | "ok"
+        | "bad"
+        | "رائع"
+        | "جيد"
+        | "مقبول"
+        | "سيئ"
+        | null;
 
     export let data: PageServerData;
 
@@ -288,20 +297,20 @@
 
     function setScore() {
         if (wrongTypedWordsCount <= duckHuntExpectedScore) {
-            score = "perfect";
+            score = lang === "en" ? "perfect" : "رائع";
         } else if (
             wrongTypedWordsCount > duckHuntExpectedScore &&
             wrongTypedWordsCount <= duckHuntExpectedScore / 2
         ) {
-            score = "good";
+            score = lang === "en" ? "good" : "جيد";
         } else if (
             wrongTypedWordsCount > duckHuntExpectedScore / 2 &&
             wrongTypedWordsCount <=
                 duckHuntExpectedScore + duckHuntExpectedScore / 2
         ) {
-            score = "ok";
+            score = lang === "en" ? "ok" : "مقبول";
         } else {
-            score = "bad";
+            score = lang === "en" ? "bad" : "سيئ";
         }
     }
 
@@ -399,7 +408,7 @@
                     class="absolute z-20 top-[-2.4rem] left-0 right-0 flex justify-center"
                 >
                     <h3
-                        class="score text-6xl font-bold capitalize bg-darkblue text-gostwhite rounded-xl p-2"
+                        class="score text-6xl font-bold capitalize bg-darkblue text-gostwhite rounded-xl px-2 py-3"
                     >
                         {score}
                     </h3>

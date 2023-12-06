@@ -9,7 +9,7 @@
 <div
     class="flex flex-col items-center gap-20 select-none text-gostwhite dark:text-darkblue"
 >
-    <h1>
+    <h1 class="font-extrabold text-8xl">
         <span><strong>{language[`${lang}`].heroTitle[0]}</strong></span
         >{language[`${lang}`].heroTitle.slice(1)}
     </h1>
@@ -18,7 +18,7 @@
         <a
             href="/{lang}/levels"
             data-sveltekit-preload-data="off"
-            class="bg-tomato rounded-md py-4 px-2 block text-center text-2xl font-bold hover:bg-gostwhite hover:text-darkblue transition-colors"
+            class="bg-tomato rounded-md py-4 px-2 block text-center text-2xl font-bold hover:bg-gostwhite dark:hover:bg-darkblue hover:text-darkblue dark:hover:text-gostwhite transition-colors"
         >
             {language[`${lang}`].heroButtonPlay}
         </a>
@@ -26,10 +26,6 @@
 </div>
 
 <style lang="postcss">
-    h1 {
-        font-size: 6rem;
-        font-weight: 900;
-    }
     h1 span {
         display: inline-block;
         background: transparent;

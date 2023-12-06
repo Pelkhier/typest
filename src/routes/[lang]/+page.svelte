@@ -6,7 +6,12 @@
     import HeroNotLogedin from "$lib/components/home/heroNotLogedin.svelte";
     import type { UserClient } from "$lib/components/home/types";
     import HeroLogedin from "$lib/components/home/heroLogedin.svelte";
-    import { Contributors, Details, TestSkills } from "$lib/components";
+    import {
+        Contributors,
+        Details,
+        PlayOffline,
+        TestSkills,
+    } from "$lib/components";
 
     export let data: PageServerData;
 
@@ -75,15 +80,24 @@
     </div>
     <!-- End Hero Section -->
 
+    <!-- Start Play Offline Section -->
+    <PlayOffline {lang} />
+    <!-- End Play Offline Section -->
+
     <!-- Start Test Skills Section -->
     <TestSkills {lang} />
-    <!-- Start Test Skills Section -->
-    <Details />
+    <!-- End Test Skills Section -->
+    <Details {lang} />
     <!-- Start Contribute Section -->
     <Contributors githubUsers={data.githubUsers} {lang} />
     <!-- End Contribute Section -->
 
-    <div class="w-full h-[700px]" />
+    <!-- TODO : finish content ... -->
+    <div class="w-full h-[400px] text-center mt-20">
+        <h2 class="text-6xl font-bold">
+            {lang === "en" ? "To Be Coninue..." : "جاري العمل..."}
+        </h2>
+    </div>
 </div>
 
 <style lang="postcss">
@@ -92,7 +106,7 @@
         min-height: 600px;
         min-width: 1200px;
     }
-    :global(html .layout[data-dir="en"] .home .hero) {
+    :global(html body[data-lang="en"] .home .hero) {
         border-radius: 1.5rem 0 1.5rem 1.5rem;
 
         background: rgb(122, 122, 122);
@@ -103,7 +117,7 @@
             rgba(29, 33, 43, 1) 100%
         );
     }
-    :global(html.dark .layout[data-dir="en"] .home .hero) {
+    :global(html.dark body[data-lang="en"] .home .hero) {
         background: rgb(179, 179, 179);
         background: linear-gradient(
             9deg,
@@ -112,7 +126,7 @@
             rgba(248, 248, 255, 1) 100%
         );
     }
-    :global(html .layout[data-dir="ar"] .home .hero) {
+    :global(html body[data-lang="ar"] .home .hero) {
         border-radius: 0 1.5rem 1.5rem 1.5rem;
         background: rgb(122, 122, 122);
         background: linear-gradient(
@@ -122,7 +136,7 @@
             rgba(29, 33, 43, 1) 100%
         );
     }
-    :global(html.dark .layout[data-dir="ar"] .home .hero) {
+    :global(html.dark body[data-lang="ar"] .home .hero) {
         background: rgb(179, 179, 179);
         background: linear-gradient(
             351deg,

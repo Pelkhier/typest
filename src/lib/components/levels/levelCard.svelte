@@ -133,7 +133,7 @@
     .level.completed::before {
         opacity: 1;
     }
-    :global(.layout[data-dir="ar"] .level::before) {
+    :global(body[data-lang="ar"] .level::before) {
         translate: 0.8rem -0.8rem;
     }
     :global(.finger) {

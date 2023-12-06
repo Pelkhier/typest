@@ -166,11 +166,11 @@
         padding: 1rem 2rem;
     }
 
-    :global(.layout[data-dir="ar"]) {
+    :global(body[data-lang="ar"]) {
         direction: rtl;
         font-family: "Noto Kufi Arabic", sans-serif;
     }
-    :global(.layout[data-dir="en"]) {
+    :global(body[data-lang="en"]) {
         direction: ltr;
     }
 
@@ -199,10 +199,10 @@
         border-radius: 1.5rem 1.5rem 0 0;
         @apply bg-darkblue dark:bg-gostwhite;
     }
-    .layout[data-dir="en"] nav .right-bar div .signin {
+    body[data-lang="en"] nav .right-bar div .signin {
         @apply border-r-4 border-r-darkblue dark:border-r-gostwhite;
     }
-    .layout[data-dir="ar"] nav .right-bar div .signin {
+    body[data-lang="ar"] nav .right-bar div .signin {
         @apply border-l-4 border-l-darkblue dark:border-l-gostwhite;
     }
 
@@ -213,11 +213,11 @@
     .left-bar-inner {
         @apply bg-gostwhite text-darkblue dark:bg-darkblue dark:text-gostwhite;
     }
-    .layout[data-dir="en"] nav .left-bar-inner {
+    body[data-lang="en"] nav .left-bar-inner {
         border-radius: 0 0 1.5rem 0;
         padding-left: 1rem;
     }
-    .layout[data-dir="ar"] nav .left-bar-inner {
+    body[data-lang="ar"] nav .left-bar-inner {
         border-radius: 0 0 0 1.5rem;
         padding-right: 1rem;
     }

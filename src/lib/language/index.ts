@@ -33,6 +33,13 @@ export const en = {
         signin: "Signin",
         logout: "Logout",
     },
+    offlineSection: {
+        title: "Play Offline",
+        subtitle: "Download Typest app and enjoy it offline (demo)",
+        windows: "Windows",
+        linux: "Linux",
+        mac: "Mac",
+    },
     signin: {
         signinButton: "Signin",
         loginHref: "Login",
@@ -92,6 +99,13 @@ export const ar = {
         addLevel: "أضف جولة",
         signin: "سجل",
         logout: "خروج",
+    },
+    offlineSection: {
+        title: "حمل الآن",
+        subtitle: "حمل اللعبة لجهازك وإستمتع بها بدون إنترنت (تجريبي)",
+        windows: "ويندوز",
+        linux: "لينكس",
+        mac: "ماك",
     },
     signin: {
         signinButton: "سجل الآن",

@@ -32,9 +32,11 @@
         } else {
             lang = localLang;
         }
+        document.body.dataset.lang = lang;
+        document.body.dir = lang === "en" ? "ltr" : "rtl";
         $langStore = lang;
         if ($page.url.pathname === "/") {
-            goto(`${lang}`);
+            goto(`/${lang}`);
         }
     });
 </script>

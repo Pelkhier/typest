@@ -43,7 +43,7 @@
 </div>
 
 <style lang="postcss">
-    :global(.layout[data-dir="en"] .home .test-skills .test-skills-container) {
+    :global(body[data-lang="en"] .home .test-skills .test-skills-container) {
         background: rgb(255, 99, 71);
         background: linear-gradient(
             9deg,
@@ -51,7 +51,7 @@
             rgba(195, 77, 55, 1) 100%
         );
     }
-    :global(.layout[data-dir="ar"] .home .test-skills .test-skills-container) {
+    :global(body[data-lang="ar"] .home .test-skills .test-skills-container) {
         background: rgb(255, 99, 71);
         background: linear-gradient(
             351deg,

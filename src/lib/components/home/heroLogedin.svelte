@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { enhance } from "$app/forms";
     import { page } from "$app/stores";
     import language from "$lib/language";
     import CyrcleChart from "../charts/cyrcleChart.svelte";
@@ -68,11 +69,14 @@
                         </span>
                     </h4>
                 {:else}
-                    <button
-                        class="border-2 border-darkblue py-2 px-4 rounded-md shadow-lg text-darkblue hover:bg-darkblue hover:text-gostwhite"
-                    >
-                        {language[`${lang}`].heroStats.lastStoryTime.play}
-                    </button>
+                    <form method="post" action="?/getRandomStory" use:enhance>
+                        <button
+                            type="submit"
+                            class="border-2 border-darkblue py-2 px-4 rounded-md shadow-lg text-darkblue hover:bg-darkblue hover:text-gostwhite"
+                        >
+                            {language[`${lang}`].heroStats.lastStoryTime.play}
+                        </button>
+                    </form>
                 {/if}
             </div>
         </div>
