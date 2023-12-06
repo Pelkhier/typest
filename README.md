@@ -4,6 +4,7 @@
 
 -   [Introduction](#introduction)
 -   [Features](#features)
+-   [Desktop App](#desktop)
 -   [Contributing](#contributing)
 -   [License](#license)
 
@@ -19,10 +20,14 @@ The project main focus is supporting Arabic and English typing, reaching this go
 -   User-friendly interface for an enjoyable experience.
 -   Open-source and customizable for your specific needs.
 
+## Desktop App
+
+This app has an offline desktop version, but still under development, if you want to contribute to that project you can visit [Typest App repo](https://github.com/Pelkhier/typest-app) and download the demo from there.
+
 ## Contributing
 
-We welcome contributions from the community. If you'd like to contribute, please follow our [contribution guidelines](https://github.com/Pelkhier/sveltype/blob/main/CONTRIBUTING.md) and create a pull request. Whether you're a developer, designer, or writer, your contributions are valuable.
+We welcome contributions from the community. If you'd like to contribute, please follow our [contribution guidelines](https://github.com/Pelkhier/typest/blob/main/CONTRIBUTING.md) and create a pull request. Whether you're a developer, designer, or writer, your contributions are valuable.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Pelkhier/sveltype/blob/main/LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Pelkhier/typest/blob/main/LICENSE.md) file for details.

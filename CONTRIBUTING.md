@@ -4,6 +4,10 @@ When contributing to this repository, please first discuss the change you wish t
 
 Please note if you are working on a certain issue then make sure to stay active with development.
 
+### Note
+
+This application has two versions, web and desktop versions, this repo for the web app but if you want to contribute to the desktop version you can visit [Typest App repo](https://github.com/Pelkhier/typest-app) and start from there.
+
 ## Git Commit, Branch, and PR Naming Conventions
 
 When you are working with git, please be sure to follow the conventions below on your pull requests, branches, and commits:
