@@ -69,80 +69,352 @@
             "lang": "en",
             "type": "learn",
             "expectedMiniGameScore": null,
-            "name": "l&s",
-            "words": "lll sss l s l s l s lls ssl lll sss"
+            "name": "f&d&k&j",
+            "words": "ffff jjjj dddd kkkk jjff kkdd ddjj ffkk fdjk kjfd fjkd dkfj ffjj ddkk jjkk ffdd ff jj dd kk"
         },
         {
             "order": 10,
             "lang": "en",
             "type": "practice",
             "expectedMiniGameScore": null,
-            "name": "l&s",
-            "words": "lll sss llll ssss llls sssl lsl sls lls ssl ssll llss lsls slsl ss ll sss lll ssss llll"
+            "name": "f&d&k&j",
+            "words": "ffff jjjj dddd kkkk jjff kkdd ddjj ffkk fdjk kjfd fjkd dkfj ffjj ddkk jjkk ffdd fff jjj ddd kkk kkd ddj ffk kkf fk dj jd kf kk jj ff dd"
         },
         {
             "order": 11,
             "lang": "en",
             "type": "samurai-game",
             "expectedMiniGameScore": 2,
-            "name": "l&s",
-            "words": "llll ssss ll ss lsl sls llss ssll llls slll lsls llll ssss"
+            "name": "f&d&k&j",
+            "words": "ffff jjjj dddd kkkk jjff kkdd ddjj ffkk fdjk kjfd fjkd dkfj ffjj ddkk jjkk ffdd ff jj dd kk"
         },
         {
             "order": 12,
             "lang": "en",
             "type": "duck-hunt",
             "expectedMiniGameScore": 5,
-            "name": "l&s",
-            "words": "llll ssss ll ss lsl sls llss ssll llls slll lsls llll ssss"
+            "name": "f&d&k&j",
+            "words": "ffff jjjj dddd kkkk jjff kkdd ddjj ffkk fdjk kjfd fjkd dkfj ffjj ddkk jjkk ffdd ff jj dd kk"
         },
         {
             "order": 13,
             "lang": "en",
             "type": "learn",
             "expectedMiniGameScore": null,
-            "name": ";&a",
-            "words": ";;; aaa ; a ; a ; a ;;a a; ;;; aaa"
+            "name": "s&l",
+            "words": "sss lll s l s l s l lls lls sss lll"
         },
         {
             "order": 14,
             "lang": "en",
             "type": "practice",
             "expectedMiniGameScore": null,
-            "name": ";&a",
-            "words": ";;; aaa ;;;; aaaa ;;;a a;;; ;a; a;a ;;a aa; ;;aa aa;; ;a;a a;a; aa ;; aaa ;;; aaaa ;;;;"
+            "name": "s&l",
+            "words": "sss lll ssss llll sssl llls sls lsl lls ssl llss ssll slsl lsls ll ss lll sss llll ssss"
         },
         {
             "order": 15,
             "lang": "en",
             "type": "samurai-game",
             "expectedMiniGameScore": 2,
-            "name": ";&a",
-            "words": ";;;; aaaa ;; aa ;a; a;a ;;aa aa;; ;;;a ;aaa ;a;a aaaa ;;;;"
+            "name": "s&l",
+            "words": "ssss llll ss ll sls lsl sll lls llls slll slsl ssll llll"
         },
         {
             "order": 16,
             "lang": "en",
             "type": "duck-hunt",
             "expectedMiniGameScore": 5,
-            "name": ";&a",
-            "words": ";;;; aaaa ;; aa ;a; a;a ;;aa aa;; ;;;a ;aaa ;a;a aaaa ;;;;"
+            "name": "s&l",
+            "words": "ssss llll ss ll sls lsl sll lls llls slll slsl ssll llll"
         },
         {
             "order": 17,
             "lang": "en",
-            "type": "story-time",
+            "type": "learn",
             "expectedMiniGameScore": null,
-            "name": "Eldoria",
-            "words": "In the quiet town of Eldoria, shadows danced on cobblestone streets. Amelia, a curious girl with silver hair, discovered an ancient book in her attic. Its pages whispered forgotten tales. As she read, the room filled with ethereal light, revealing a portal to a realm of dreams. Brave and trembling, Amelia stepped through, embarking on a journey where words wove magic, and every keystroke shaped her destiny. Eldoria awaited the scribe who would inscribe new legends into the Book of Whispers."
+            "name": "f&s&l&j",
+            "words": "ffff jjjj ssss llll jjff llss ssjj ffll fsjl ljfs fjls slfj ffjj ssll jjll ffss ff jj ss ll"
         },
         {
             "order": 18,
             "lang": "en",
-            "type": "story-time",
+            "type": "practice",
             "expectedMiniGameScore": null,
-            "name": "Finley",
-            "words": "In the heart of Everwood Forest, a mischievous fox named Finley darted between ancient trees. One day, he stumbled upon a hidden glade adorned with glowing mushrooms. Intrigued, Finley touched a mushroom, and to his surprise, it whispered forgotten secrets. The forest echoed with enchantment as Finley, now imbued with mystical knowledge, embarked on a quest. His nimble paws danced across the mossy ground, leaving a trail of luminous prints. Legends say those who follow Finley's path unlock the magic within the trees, revealing the ethereal harmony of Everwood."
+            "name": "f&s&l&j",
+            "words": "ffff jjjj ssss llll jjff llss ssjj ffll fsjl ljfs fjls slfj ffjj ssll jjll ffss fff jjj sss lll lls ssj ffl llf fl sj js lf ll jj ff ss"
+        },
+        {
+            "order": 19,
+            "lang": "en",
+            "type": "samurai-game",
+            "expectedMiniGameScore": 2,
+            "name": "f&s&l&j",
+            "words": "ffff jjjj ssss llll jjff llss ssjj ffll fsjl ljfs fjls slfj ffjj ssll jjll ffss ff jj ss ll"
+        },
+        {
+            "order": 20,
+            "lang": "en",
+            "type": "duck-hunt",
+            "expectedMiniGameScore": 5,
+            "name": "f&s&l&j",
+            "words": "ffff jjjj ssss llll jjff llss ssjj ffll fsjl ljfs fjls slfj ffjj ssll jjll ffss ff jj ss ll"
+        },
+        {
+            "order": 21,
+            "lang": "en",
+            "type": "learn",
+            "expectedMiniGameScore": null,
+            "name": "s-to-l",
+            "words": "ssss ffff jjjj kkkk llll ffjj ddkk ssll sss lll kkk ddd fff jjj lkjfds sdfjkl fffj kkkd ss dd ff jj kk ll"
+        },
+        {
+            "order": 22,
+            "lang": "en",
+            "type": "practice",
+            "expectedMiniGameScore": null,
+            "name": "s-to-l",
+            "words": "ssss ffff jjjj kkkk llll ffjj ddkk ssll fjdk fjsl dksl llkk jjll ffdd ffss ssdd fkfj jdjk lkj sdf sss ddd lll kkk ffjj kkdd ssll"
+        },
+        {
+            "order": 23,
+            "lang": "en",
+            "type": "samurai-game",
+            "expectedMiniGameScore": 2,
+            "name": "s-to-l",
+            "words": "ssss dddd ffff jjjj kkkk llll ssll ddkk ffjj jjff kkdd llss sldkfj jfkdls ssl ddk ffj fjfj dkdk slsl sss ddd fff jjj kkk lll"
+        },
+        {
+            "order": 24,
+            "lang": "en",
+            "type": "duck-hunt",
+            "expectedMiniGameScore": 5,
+            "name": "s-to-l",
+            "words": "ssss dddd ffff jjjj kkkk llll ssll ddkk ffjj jjff kkdd llss sldkfj jfkdls ssl ddk ffj fjfj dkdk slsl sss ddd fff jjj kkk lll"
+        },
+        {
+            "order": 25,
+            "lang": "en",
+            "type": "learn",
+            "expectedMiniGameScore": null,
+            "name": "a&;",
+            "words": ";;; aaa ; a ; a ; a ;;a a; ;;; aaa"
+        },
+        {
+            "order": 26,
+            "lang": "en",
+            "type": "practice",
+            "expectedMiniGameScore": null,
+            "name": "a&;",
+            "words": ";;; aaa ;;;; aaaa ;;;a a;;; ;a; a;a ;;a aa; ;;aa aa;; ;a;a a;a; aa ;; aaa ;;; aaaa ;;;;"
+        },
+        {
+            "order": 27,
+            "lang": "en",
+            "type": "samurai-game",
+            "expectedMiniGameScore": 2,
+            "name": "a&;",
+            "words": ";;;; aaaa ;; aa ;a; a;a ;;aa aa;; ;;;a ;aaa ;a;a aaaa ;;;;"
+        },
+        {
+            "order": 28,
+            "lang": "en",
+            "type": "duck-hunt",
+            "expectedMiniGameScore": 5,
+            "name": "a&;",
+            "words": ";;;; aaaa ;; aa ;a; a;a ;;aa aa;; ;;;a ;aaa ;a;a aaaa ;;;;"
+        },
+        {
+            "order": 29,
+            "lang": "en",
+            "type": "learn",
+            "expectedMiniGameScore": null,
+            "name": "a&f&j&;",
+            "words": "ffff jjjj aaaa ;;;; jjff ;;aa aajj ff;; faj; ;jfa fj;a a;fj ffjj aa;; jj;; ffaa ff jj aa ;;"
+        },
+        {
+            "order": 30,
+            "lang": "en",
+            "type": "practice",
+            "expectedMiniGameScore": null,
+            "name": "a&f&j&;",
+            "words": "ffff jjjj aaaa ;;;; jjff ;;aa aajj ff;; faj; ;jfa fj;a a;fj ffjj aa;; jj;; ffaa fff jjj aaa ;;; ;;a aaj ff; ;;f f; aj ja ;f ;; jj ff aa"
+        },
+        {
+            "order": 31,
+            "lang": "en",
+            "type": "samurai-game",
+            "expectedMiniGameScore": 2,
+            "name": "a&f&j&;",
+            "words": "ffff jjjj aaaa ;;;; jjff ;;aa aajj ff;; faj; ;jfa fj;a a;fj ffjj aa;; jj;; ffaa ff jj aa ;;"
+        },
+        {
+            "order": 32,
+            "lang": "en",
+            "type": "duck-hunt",
+            "expectedMiniGameScore": 5,
+            "name": "a&f&j&;",
+            "words": "ffff jjjj aaaa ;;;; jjff ;;aa aajj ff;; faj; ;jfa fj;a a;fj ffjj aa;; jj;; ffaa ff jj aa ;;"
+        },
+        {
+            "order": 33,
+            "lang": "en",
+            "type": "learn",
+            "expectedMiniGameScore": null,
+            "name": "a-to-;",
+            "words": "ffaa jj;; ddkk ssll fdsa jkl; ;als dkfj ffll jjss ;las dfkj fjdksla; fff jjj ddd kkk sss lll aaa ;;;"
+        },
+        {
+            "order": 34,
+            "lang": "en",
+            "type": "practice",
+            "expectedMiniGameScore": null,
+            "name": "a-to-;",
+            "words": "ffaa jj;; ddkk ssll fdsa jkl; ;als dkfj ffll jjss ;las dfkj fjdksla; fff jjj ddd kkk sss lll aaa ;;;"
+        },
+        {
+            "order": 35,
+            "lang": "en",
+            "type": "samurai-game",
+            "expectedMiniGameScore": 2,
+            "name": "a-to-;",
+            "words": "ffaa jj;; ddkk ssll fdsa jkl; ;als dkfj ffll jjss ;las dfkj fjdksla; fff jjj ddd kkk sss lll aaa ;;;"
+        },
+        {
+            "order": 36,
+            "lang": "en",
+            "type": "duck-hunt",
+            "expectedMiniGameScore": 5,
+            "name": "a-to-;",
+            "words": "ffaa jj;; ddkk ssll fdsa jkl; ;als dkfj ffll jjss ;las dfkj fjdksla; fff jjj ddd kkk sss lll aaa ;;;"
+        },
+        {
+            "order": 37,
+            "lang": "en",
+            "type": "learn",
+            "expectedMiniGameScore": null,
+            "name": "f&j&'",
+            "words": "ffff jjjj '''' ffjj ff'' jj'' jf' 'jf j'f ''f ''j jf'' ffff jjjj ''''"
+        },
+        {
+            "order": 38,
+            "lang": "en",
+            "type": "practice",
+            "expectedMiniGameScore": null,
+            "name": "f&j&'",
+            "words": "fjfj f'f' j'j' ''ff jj'' fjj' jff' 'ffj j''f 'fj' 'jf' '''f j''' ''f' 'j''' fff' 'jjj f'j' ff'' jj'' fff jjj '''"
+        },
+        {
+            "order": 39,
+            "lang": "en",
+            "type": "samurai-game",
+            "expectedMiniGameScore": 2,
+            "name": "f&j&'",
+            "words": "fjfj f'f' j'j' ''ff jj'' fjj' jff' 'ffj j''f 'fj' 'jf' '''f j''' ''f' 'j''' fff' 'jjj f'j' ff'' jj'' fff jjj '''"
+        },
+        {
+            "order": 40,
+            "lang": "en",
+            "type": "duck-hunt",
+            "expectedMiniGameScore": 5,
+            "name": "f&j&'",
+            "words": "fjfj f'f' j'j' ''ff jj'' fjj' jff' 'ffj j''f 'fj' 'jf' '''f j''' ''f' 'j''' fff' 'jjj f'j' ff'' jj'' fff jjj '''"
+        },
+        {
+            "order": 41,
+            "lang": "en",
+            "type": "learn",
+            "expectedMiniGameScore": null,
+            "name": "j-to'",
+            "words": "jjjj kkkk llll ;;;; '''' jjkk kkll ll;; ''jj jkl;' ';lkj jjjj kkkk llll ;;;; ''''"
+        },
+        {
+            "order": 42,
+            "lang": "en",
+            "type": "practice",
+            "expectedMiniGameScore": null,
+            "name": "j-to'",
+            "words": "jjkk ll;; ''jj jkl; ;lkj kl;' ';lk jjll kk'' jjll llkk jkjl klk' ';lkj jkl;' '';; jj'' lljj' llkk' jkl;' ';lkj jjjj kkkk llll ;;;; ''''"
+        },
+        {
+            "order": 43,
+            "lang": "en",
+            "type": "samurai-game",
+            "expectedMiniGameScore": 2,
+            "name": "j-to'",
+            "words": "jjkk ll;; ''jj jkl; ;lkj kl;' ';lk jjll kk'' jjll llkk jkjl klk' ';lkj jkl;' '';; jj'' lljj' llkk' jkl;' ';lkj jjjj kkkk llll ;;;; ''''"
+        },
+        {
+            "order": 44,
+            "lang": "en",
+            "type": "duck-hunt",
+            "expectedMiniGameScore": 5,
+            "name": "j-to'",
+            "words": "jjkk ll;; ''jj jkl; ;lkj kl;' ';lk jjll kk'' jjll llkk jkjl klk' ';lkj jkl;' '';; jj'' lljj' llkk' jkl;' ';lkj jjjj kkkk llll ;;;; ''''"
+        },
+        {
+            "order": 45,
+            "lang": "en",
+            "type": "learn",
+            "expectedMiniGameScore": null,
+            "name": "a-to-f",
+            "words": "aaaa ssss dddd ffff ffdd ssaa aass ddff fdsa asdf sdfa afsd sffa fass afdd ddaf sdda dssf aafs ddsd fads ffsf daaf ffff dddd ssss aaaa"
+        },
+        {
+            "order": 46,
+            "lang": "en",
+            "type": "practice",
+            "expectedMiniGameScore": null,
+            "name": "a-to-f",
+            "words": "aaaa ssss dddd ffff ffdd ssaa aass ddff fdsa asdf sdfa afsd sffa fass afdd ddaf sdda dssf aafs ddsd fads ffsf daaf ffff dddd ssss aaaa"
+        },
+        {
+            "order": 47,
+            "lang": "en",
+            "type": "samurai-game",
+            "expectedMiniGameScore": 2,
+            "name": "a-to-f",
+            "words": "aaaa ssss dddd ffff ffdd ssaa aass ddff fdsa asdf sdfa afsd sffa fass afdd ddaf sdda dssf aafs ddsd fads ffsf daaf ffff dddd ssss aaaa"
+        },
+        {
+            "order": 48,
+            "lang": "en",
+            "type": "duck-hunt",
+            "expectedMiniGameScore": 5,
+            "name": "a-to-f",
+            "words": "aaaa ssss dddd ffff ffdd ssaa aass ddff fdsa asdf sdfa afsd sffa fass afdd ddaf sdda dssf aafs ddsd fads ffsf daaf ffff dddd ssss aaaa"
+        },
+        {
+            "order": 49,
+            "lang": "en",
+            "type": "learn",
+            "expectedMiniGameScore": null,
+            "name": "a-to-'",
+            "words": "aaaa ssss dddd ffff gggg hhhh jjjj kkkk llll ;;;; '''' gghh ffjj ddkk ssll aa;;; ''ff as;l dfkj gh'a aass ddff gghh jjkk ll;; ''''"
+        },
+        {
+            "order": 50,
+            "lang": "en",
+            "type": "practice",
+            "expectedMiniGameScore": null,
+            "name": "a-to-'",
+            "words": "aaaa ssss dddd ffff gggg hhhh jjjj kkkk llll ;;;; '''' gghh ffjj ddkk ssll aa;;; ''ff as;l dfkj gh'a aass ddff gghh jjkk ll;; '''' asdf jkl; ghfj '';; llkk jjhh ffgg ddss aasd asdfg hjkl;'"
+        },
+        {
+            "order": 51,
+            "lang": "en",
+            "type": "samurai-game",
+            "expectedMiniGameScore": 2,
+            "name": "a-to-'",
+            "words": "aaaa ssss dddd ffff gggg hhhh jjjj kkkk llll ;;;; '''' gghh ffjj ddkk ssll aa;;; ''ff as;l dfkj gh'a aass ddff gghh jjkk ll;; '''' asdf jkl; ghfj '';; llkk jjhh ffgg ddss aasd asdfg hjkl;'"
+        },
+        {
+            "order": 52,
+            "lang": "en",
+            "type": "duck-hunt",
+            "expectedMiniGameScore": 5,
+            "name": "a-to-'",
+            "words": "aaaa ssss dddd ffff gggg hhhh jjjj kkkk llll ;;;; '''' gghh ffjj ddkk ssll aa;;; ''ff as;l dfkj gh'a aass ddff gghh jjkk ll;; '''' asdf jkl; ghfj '';; llkk jjhh ffgg ddss aasd asdfg hjkl;'"
         }
     ]
 }

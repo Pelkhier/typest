@@ -1,8 +1,13 @@
-import db from "$lib/server/database";
-import type { PageServerLoad } from "./$types";
 import type { Lang } from "$lib/components/keyboard/types";
-export const load: PageServerLoad = async ({ locals }) => {
-    let lang: Lang = locals.lang ?? "en";
+import db from "$lib/server/database";
+import { fail, json, type RequestHandler } from "@sveltejs/kit";
+
+export const GET: RequestHandler = async ({ url, locals }) => {
+    const count = Number(url.searchParams.get("count"));
+    if (isNaN(count) || !count) throw Error("Not found");
+
+    const lang: Lang = locals.lang ?? "en";
+
     const userLevels = await db.userLevel.findMany({
         where: {
             userId: locals?.user?.id,
@@ -32,7 +37,8 @@ export const load: PageServerLoad = async ({ locals }) => {
             },
         },
         take: 18,
+        skip: count,
     });
 
-    return { userLevels };
+    return json(userLevels);
 };
