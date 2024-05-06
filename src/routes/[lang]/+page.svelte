@@ -92,12 +92,8 @@
     <Contributors githubUsers={data.githubUsers} {lang} />
     <!-- End Contribute Section -->
 
-    <!-- TODO : finish content ... -->
-    <div class="w-full h-[400px] text-center mt-20">
-        <h2 class="text-6xl font-bold">
-            {lang === "en" ? "To Be Coninue..." : "جاري العمل..."}
-        </h2>
-    </div>
+    <!-- Start Footer Section -->
+    <!-- End Footer Section -->
 </div>
 
 <style lang="postcss">

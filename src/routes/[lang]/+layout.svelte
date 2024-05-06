@@ -1,7 +1,7 @@
 <script lang="ts">
     import { dev } from "$app/environment";
     import language from "$lib/language";
-    import { LogoSecondary, Spinner } from "$lib/components";
+    import { Footer, LogoSecondary, Spinner } from "$lib/components";
     import { navigating, page } from "$app/stores";
     import type { Lang } from "$lib/components/keyboard/types";
     import { langStore } from "$lib/store/global";
@@ -157,12 +157,15 @@
         <slot />
     </main>
 </div>
+{#if $page.url.pathname == "/ar" || $page.url.pathname == "/en"}
+    <Footer {lang} />
+{/if}
 
 <style lang="postcss">
     :global(.layout) {
-        height: 100%;
-        display: grid;
-        grid-template-rows: auto 1fr;
+        /* height: 100%; */
+        /* display: grid; */
+        /* grid-template-rows: auto 1fr; */
         padding: 1rem 2rem;
     }
 

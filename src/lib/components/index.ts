@@ -12,6 +12,7 @@ import PlayOffline from "./home/playOffline.svelte";
 import TestSkills from "./home/testSkills.svelte";
 import Details from "./home/details.svelte";
 import Contributors from "./home/contributors.svelte";
+import Footer from "./home/footer.svelte";
 export {
     LogoPrimary,
     LogoSecondary,
@@ -27,4 +28,5 @@ export {
     TestSkills,
     Details,
     Contributors,
+    Footer,
 };

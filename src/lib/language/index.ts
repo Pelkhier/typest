@@ -45,7 +45,7 @@ export const en = {
         loginHref: "Login",
         loginButton: "Login",
         signinHref: "Signin",
-        namePlaceholder: "Enter your email",
+        namePlaceholder: "Enter your name or alias",
         emailPlaceholder: "Enter your email",
         passwordPlaceholder: "Enter your password",
     },
@@ -62,6 +62,9 @@ export const en = {
         largeText: "Large",
         keyboardSound: "Keyboard sound",
         KeyboardShow: "Keyboard",
+    },
+    footer: {
+        contactUs: "Contact Us",
     },
 };
 
@@ -129,6 +132,9 @@ export const ar = {
         largeText: "كبير",
         keyboardSound: "أصوات الطباعة",
         KeyboardShow: "لوحة المفاتيح",
+    },
+    footer: {
+        contactUs: "تواصل معنا",
     },
 };
 
