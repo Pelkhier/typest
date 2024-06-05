@@ -7,16 +7,16 @@ generator client {
 }
 
 // Cloud or local online database
-// datasource db {
-//   provider = "postgresql"
-//   url      = env("DATABASE_URL")
-// }
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
 
 // Local offline database
-datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
-}
+// datasource db {
+//   provider = "sqlite"
+//   url      = "file:./dev.db"
+// }
 
 model User {
   id       Int    @id @default(autoincrement())
