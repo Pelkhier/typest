@@ -48,14 +48,22 @@ export async function signinUser({ name, email, password }: UserSigninInfo) {
     });
 
     const levels = await db.level.findMany({ select: { id: true } });
+    let data = [];
     for (let level of levels) {
-        await db.userLevel.create({
-            data: {
-                userId: user.id,
-                levelId: level.id,
-            },
+        data.push({
+            userId: user.id,
+            levelId: level.id,
         });
     }
+    await db.userLevel.createMany({ data });
+    // for (let level of levels) {
+    //     await db.userLevel.create({
+    //         data: {
+    //             userId: user.id,
+    //             levelId: level.id,
+    //         },
+    //     });
+    // }
 
     return user;
 }
